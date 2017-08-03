@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>css3-animation</title>
+</head>
+<style>
+.move{
+    position: absolute;
+    width:100px;
+    height:100px;
+    background: red;
+  -webkit-animation:movee 2s ease 1s 20 normal running backwards;
+     -moz-animation:movee 2s ease 1s 20 normal running backwards;
+       -o-animation:movee 2s ease 1s 20 normal running backwards;
+          animation:movee 2s ease 1s 20 normal running backwards; 
+}
+
+/* movee */
+@-webkit-keyframes movee
+{
+  0%   {opacity:0.9; background:rgb(190,144,212);left:0px;}
+  8%   {opacity:0.6; background:rgb(46,204,113);left:100px;}
+  16%  {opacity:0.5; background:rgb(224,130,131);left:200px;}
+  56%  {opacity:0.3; background:rgb(190,144,212);left:400px;}
+  100% {opacity:0.1; background:rgb(190,144,212);left:600px;}
+}
+</style>
+<body>
+<div class="move"></div>
+</body>
+</html>

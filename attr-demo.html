@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sttrdemo</title>
+</head>
+<style>
+    body{padding:100px;}
+    span{position: relative;display: inline-block;}
+    span:hover{cursor:pointer;}
+    span:hover:before{
+        content:attr(datd-tooltip);
+        background: red;
+        color:#fff;
+        padding:.8em 1em;
+        position: absolute;
+        left:100%;
+        top:-70%;
+        margin-left: 14px;
+        white-space: pre;
+    }
+    span:hover:after{
+        content:"hello paopao";
+        position: absolute;
+        left:108%;
+        width:0;
+        height:0;
+        border-right:8px solid red;
+        border-top:8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+</style>
+<body>
+ <div>
+
+    <span data-tooltip="hello world">Hover Me!!!</span>
+
+</div>   
+</body>
+</html>

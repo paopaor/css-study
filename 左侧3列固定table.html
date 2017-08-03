@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<head>
+    <title>table¹Ì¶¨ÐÐÁÐ</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style type="text/css">
+        body{margin:0px;padding :0px;font-size:12px;font-family:ËÎÌå,verdana,Arial, Helvetica;}
+        div{ scrollbar-shadow-color: #ffffff; scrollbar-highlight-color: #ffffff; scrollbar-face-color: #d9d9d9; scrollbar-3dlight-color: #d9d9d9; scrollbar-darkshadow-color: #d9d9d9; scrollbar-track-color: #ffffff,cheap ugg; scrollbar-arrow-color: #ffffff}
+        .container{width:1000px;margin-right: auto;margin-left: auto;}
+        .leftPanel{float:left;width:30%;overflow:hidden;border-top:1px solid #000;border-bottom:1px solid #000;border-left:1px solid #000;}
+        .rightPanel{float:left;width:69.8%;border-top:1px solid #000;border-bottom:1px solid #000; border-right:#000 solid 1px;}
+        .leftContent{height:250px;overflow-y:hidden;overflow-x:scroll;}
+        .leftTitle{width:100%;margin-bottom:1px;}
+        .container table{border-collapse:collapse;border-spacing:0px; width:100%; border:#000 solid 0px;}
+        .container table th{background-image:url(images/title_bg.gif);background-color:#93C3A5;color:#777;border:#000 solid 1px; font-size:12px;white-space:nowrap; height:22px; border-top:0px;border-left:0px;}
+        .rightPanel table{width:1800px;}
+        .rightTitle {width:1820px;margin-bottom:1px;}
+        .rightTop{width:100%;overflow:hidden;}
+        .rightContent{width:100%; height:250px; background:#fff; overflow-x:scroll;overflow-y:auto;}
+        .container table td{text-align:center; border:#000 solid 1px;border-left:0px;height:18px;word-break:break-all;white-space:none;}
+        .leftContent table tr{cursor:pointer;}    
+    </style>
+    
+    <script type="text/JavaScript">
+        function jscroll()
+        {
+            document.getElementById("leftContent").scrollTop = document.getElementById("rightContent").scrollTop;
+            document.getElementById("rightTop").scrollLeft = document.getElementById("rightContent").scrollLeft;
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <h4 align="center">DEMO</h4>
+        <div class="leftPanel">
+            <div class="leftTitle">
+                    <table>
+                        <tr rowspan="2" height="60px">
+                            <th width="10%">序号</th>
+                            <th width="20%">单位</th>
+                            <th width="20%">描述</th>
+                            <th width="20%">品牌</th>
+                            <th width="40%">说明</th>
+                        </tr>
+                    </table>
+            </div>
+            <div class="leftContent" id="leftContent">
+                <table>
+                    <tr>
+                        <td width="10%">1</td>
+                        <td width="20%">2</td>
+                        <td width="20%">1</td>
+                        <td width="20%">2</td>
+                        <td width="40%">1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="rightPanel">
+            <div class="rightTop" id="rightTop">
+                <div class="rightTitle">
+                    <table>
+                        <tr height="30px">
+                            <th colspan="5" width="33%">供应商1</th>
+                            <th colspan="5" width="33%">供应商2</th>
+                            <th colspan="5" width="33%">供应商3</th>
+                        </tr>
+                        <tr height="30px">
+                            <th width="15%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="3%">品牌</th>
+
+                            <th width="15%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="3%">品牌</th>
+
+                            <th width="15%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="5%">品牌</th>
+                            <th width="3%">品牌</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="rightContent" id="rightContent" onscroll="jscroll()">            
+                <table>
+                    <tr>
+                        <td width="15%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="3%">1</td>
+
+                        <td width="15%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="3%">1</td>
+
+                        <td width="15%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="5%">1</td>
+                        <td width="3%">1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
